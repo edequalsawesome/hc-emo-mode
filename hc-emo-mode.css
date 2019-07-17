@@ -141,9 +141,9 @@
     --closed-chat-msg-send-notice-bg: #b3bacf;
     
     /* in-chat notices background colors */
-    --chat-notice-tagged: #30afac;
-    --chat-notice-error: #e85a5a;
-    --chat-notice-ended: #e9a546;
+    --chat-notice-tagged: #006064;
+    --chat-notice-error: #DD2C00;
+    --chat-notice-ended: #F57F17;
 
     /* in-chat tag suggestions */
     --tag-suggestions-wrapper-bg: rgba(190, 205, 233, 0.18);
@@ -790,4 +790,15 @@ textarea[data-txt_gramm_id="2bc8d354-0cdf-b4fb-dec3-d2960b2f131b"] {
 /* hide stats heading label */
 .capacity__stats-label {
     visibility: hidden;
+}
+
+/* show original message text */
+.chat__message__expand-source-text {
+    background: #212121;
+}
+
+/* change translation text background */
+.chat__message.chat__message--with-translation .chat__message__text.chat__message__text--source {
+    background: #212121;
+    font-style: italic;
 }
