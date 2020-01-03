@@ -1,5 +1,5 @@
 /*
- * Happychat - Emo Mode (//_^)
+ * Happychat - Emo Mode //_^
  * https://happychat.io
  * Version: 1.0 
  * Sub-Version: Variable
@@ -35,8 +35,8 @@
     --button-bg: #c0c0c0;
     --button-border: #999999;
     --button-text: #000000;
-    --primary-button-bg: #55c9e2;
-    --primary-button-border: #2892a8;
+    --primary-button-bg: #14acdd;
+    --primary-button-border: #0077bb;
     
     /* sidebars */
     --happychat-sidebar-bg: #111111;
@@ -780,6 +780,35 @@ textarea[data-txt_gramm_id="2bc8d354-0cdf-b4fb-dec3-d2960b2f131b"] {
 .chat__chat-queue .capacity__operators,
 .operators_all_stats {
     background-color: var(--happychat-sidebar-bg);
+    border-color: var(--happychat-primary-bg);
+}
+
+/* adjust style of operator stats */
+.chat__chat-queue .operator_capacity {
+    background: linear-gradient(to bottom, #333, #111);
+    border-color: #333;
+}
+
+/* set color of green capacity color for operators */
+.capLevel0 .operator_ind, .capLevel1 .operator_ind, 
+.capLevel2 .operator_ind, 
+.capLevel3 .operator_ind, 
+.capLevel4 .operator_ind, 
+.capLevel5 .operator_ind {
+    background: var(--happychat-green-available);
+}
+
+/* set yellow capacity color for operators */
+.capLevel6 .operator_ind, 
+.capLevel7 .operator_ind, 
+.capLevel8 .operator_ind, 
+.capLevel9 .operator_ind {
+    background: var(--happychat-yellow-transfers);
+}
+
+/* set red capacity color for operators */
+.capLevel10 .operator_ind {
+    background: var(--happychat-red-unavailable);
 }
 
 /* hide operator stats */
@@ -801,4 +830,13 @@ textarea[data-txt_gramm_id="2bc8d354-0cdf-b4fb-dec3-d2960b2f131b"] {
 .chat__message.chat__message--with-translation .chat__message__text.chat__message__text--source {
     background: #212121;
     font-style: italic;
+}
+
+/* change domains guild logo color */
+.chat__chat-queue .operator_skills .skill.domains {
+     background-image:
+    linear-gradient(#fff, #fff),
+    url('https://domainsuniversity.files.wordpress.com/2019/12/domain.png');
+  background-size: cover;
+  background-blend-mode: saturation;
 }
