@@ -1,12 +1,11 @@
-/*
- * Happychat - Emo Mode //_^
- * https://happychat.io
- * Version: 1.0 
- * Sub-Version: Variable
- *
- * Author: eD! Thomas, based on Happychat Dark Mode by Sudipto Mondal
- */
-
+/* ==UserStyle==
+@name           Happychat Emo Mode //_^
+@namespace      github.com/edequalsawesome/hc-emo-mode
+@version        1.1
+@description    Make the Happychat Operators list easier to understand.
+@author         eD! Thomas, based on Happychat Dark Mode by Sudipto Mondal
+@updateURL      https://raw.githubusercontent.com/edequalsawesome/hc-emo-mode/master/hc-emo-mode.css
+==/UserStyle== */
 
 /* ------------------ START COLOR VARIABLES: change theme colors here ------------------ */
 
@@ -839,4 +838,10 @@ textarea[data-txt_gramm_id="2bc8d354-0cdf-b4fb-dec3-d2960b2f131b"] {
     url('https://domainsuniversity.files.wordpress.com/2019/12/domain.png');
   background-size: cover;
   background-blend-mode: saturation;
+}
+
+/* change note background color */
+.chat__current-chat__actions textarea.note {
+    background: var(--happychat-red-unavailable);
+    font-style: italic;
 }
